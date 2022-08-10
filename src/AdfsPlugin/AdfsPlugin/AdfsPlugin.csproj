@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net481</TargetFramework>
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyFile>C:\repos\secureauth\src\adfsPlugin.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.IdentityServer">
+      <HintPath>..\..\..\Microsoft.IdentityServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+</Project>
